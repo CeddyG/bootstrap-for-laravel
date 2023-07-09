@@ -1,0 +1,1 @@
+<button type="button" {{ $attributes->merge(['class' => 'btn-close']) }} aria-label="Close"></button>

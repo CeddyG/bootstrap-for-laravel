@@ -1,1 +1,5 @@
-# bootstrap-for-laravel
+Bootstrap for Laravel
+
+===============
+
+Blade component for Bootstrap.
