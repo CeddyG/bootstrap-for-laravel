@@ -37,7 +37,7 @@ class BootstrapServiceProvider extends ServiceProvider
             __DIR__.'/../resources/views' => resource_path('views/vendor/bootstrap'),
         ], 'views');
         
-        $this->loadViewsFrom(__DIR__.'/../resources/views/'.config('bootstrap.version'), config('bootstrap.namespace'));
+        $this->loadViewsFrom(__DIR__.'/../resources/views/'.config('bootstrap.version'), 'bs');
 	}
 
     /**

@@ -9,4 +9,4 @@
     </label>
 </div>
 
-<x-forms.error :name="$name" />
+<x-bs::forms.error :name="$name" />

@@ -8,7 +8,7 @@
     <button {{ $heading->attributes->merge(['class' => $btnClass]) }} type="button" data-bs-toggle="dropdown" aria-expanded="false">
         {{ $heading }}
     </button>
-    <x-dropdown.menu>
+    <x-bs::dropdown.menu>
         {{ $slot }}
-    </x-dropdown.menu>
+    </x-bs::dropdown.menu>
 </div>

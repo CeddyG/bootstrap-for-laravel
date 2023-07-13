@@ -1,5 +1,5 @@
 @if(!$floatingLabel)
-    <x-forms.label :name="$name" :label="$label" />
+    <x-bs::forms.label :name="$name" :label="$label" />
 @else    
     <div class="form-floating">
 @endif
@@ -12,8 +12,8 @@
     {{ $floatingLabel && !$attributes->has('placeholder') ? 'placeholder='.$label : '' }}>
 
 @if($floatingLabel)
-        <x-forms.label :name="$name" :label="$label" />
+        <x-bs::forms.label :name="$name" :label="$label" />
     </div>
 @endif
 
-<x-forms.error :name="$name" />
+<x-bs::forms.error :name="$name" />
