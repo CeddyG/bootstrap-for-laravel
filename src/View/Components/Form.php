@@ -2,7 +2,7 @@
 
 namespace CeddyG\Bootstrap\View\Components;
 
-use CeddyG\Bootstrap\Services\ModelBinding;
+use CeddyG\Bootstrap\Models\ModelBinding;
 use Illuminate\View\Component;
 
 class Form extends Component

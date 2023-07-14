@@ -2,7 +2,7 @@
 
 namespace CeddyG\Bootstrap\View\Components\Forms;
 
-use CeddyG\Bootstrap\Services\ModelBinding;
+use CeddyG\Bootstrap\Models\ModelBinding;
 use Illuminate\Contracts\View\Factory;
 
 class Checkbox extends Input
