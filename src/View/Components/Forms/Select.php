@@ -44,6 +44,6 @@ class Select extends Input
      */
     public function render()
     {
-        return view('components.forms.select');
+        return view('bs::components.forms.select');
     }
 }

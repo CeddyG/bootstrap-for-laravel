@@ -26,6 +26,6 @@ class Navbar extends Component
      */
     public function render()
     {
-        return view('components.navbar.index');
+        return view('bs::components.navbar.index');
     }
 }

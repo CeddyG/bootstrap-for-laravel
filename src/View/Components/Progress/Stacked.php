@@ -15,6 +15,6 @@ class Stacked extends Component
      */
     public function render()
     {
-        return view('components.progress.stacked');
+        return view('bs::components.progress.stacked');
     }
 }

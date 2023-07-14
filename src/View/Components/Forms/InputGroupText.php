@@ -23,6 +23,6 @@ class InputGroupText extends Component
      */
     public function render()
     {
-        return view('components.forms.input-group-text');
+        return view('bs::components.forms.input-group-text');
     }
 }

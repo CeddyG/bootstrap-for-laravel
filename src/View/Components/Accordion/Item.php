@@ -39,6 +39,6 @@ class Item extends Component
      */
     public function render()
     {
-        return view('components.accordion.item');
+        return view('bs::components.accordion.item');
     }
 }

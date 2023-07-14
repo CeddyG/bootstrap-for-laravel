@@ -37,6 +37,6 @@ class Breadcrumb extends Component
      */
     public function render()
     {
-        return view('components.breadcrumb.index');
+        return view('bs::components.breadcrumb.index');
     }
 }

@@ -51,6 +51,6 @@ class Accordion extends Component
      */
     public function render()
     {
-        return view('components.accordion.index');
+        return view('bs::components.accordion.index');
     }
 }

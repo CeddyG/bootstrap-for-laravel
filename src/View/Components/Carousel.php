@@ -31,6 +31,6 @@ class Carousel extends Component
      */
     public function render()
     {
-        return view('components.carousel.index');
+        return view('bs::components.carousel.index');
     }
 }

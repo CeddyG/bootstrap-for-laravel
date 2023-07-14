@@ -11,6 +11,6 @@ class Date extends Input
      */
     public function render()
     {
-        return view('components.forms.date');
+        return view('bs::components.forms.date');
     }
 }

@@ -45,6 +45,6 @@ class Checkbox extends Input
      */
     public function render()
     {
-        return view('components.forms.checkbox');
+        return view('bs::components.forms.checkbox');
     }
 }

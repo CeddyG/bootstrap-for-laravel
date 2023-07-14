@@ -44,6 +44,6 @@ class Radio extends Input
      */
     public function render()
     {
-        return view('components.forms.radio');
+        return view('bs::components.forms.radio');
     }
 }

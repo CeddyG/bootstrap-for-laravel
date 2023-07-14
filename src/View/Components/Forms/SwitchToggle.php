@@ -11,6 +11,6 @@ class SwitchToggle extends Checkbox
      */
     public function render()
     {
-        return view('components.forms.switch-toggle');
+        return view('bs::components.forms.switch-toggle');
     }
 }

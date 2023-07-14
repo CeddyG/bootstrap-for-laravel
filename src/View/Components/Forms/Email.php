@@ -11,6 +11,6 @@ class Email extends Input
      */
     public function render()
     {
-        return view('components.forms.email');
+        return view('bs::components.forms.email');
     }
 }

@@ -1,8 +1,10 @@
 <?php
 
-namespace CeddyG\Bootstrap\View\Components\Forms;
+namespace CeddyG\Bootstrap\View\Components\Layout;
 
-class Range extends Input
+use Illuminate\View\Component;
+
+class Container extends Component
 {
     /**
      * Get the view / contents that represent the component.
@@ -11,6 +13,6 @@ class Range extends Input
      */
     public function render()
     {
-        return view('bs::components.forms.range');
+        return view('bs::components.layout.container');
     }
 }

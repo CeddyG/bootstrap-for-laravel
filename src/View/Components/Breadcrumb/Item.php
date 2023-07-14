@@ -30,6 +30,6 @@ class Item extends Component
      */
     public function render()
     {
-        return view('components.breadcrumb.item');
+        return view('bs::components.breadcrumb.item');
     }
 }

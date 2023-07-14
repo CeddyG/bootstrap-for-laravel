@@ -11,6 +11,6 @@ class Text extends Input
      */
     public function render()
     {
-        return view('components.forms.text');
+        return view('bs::components.forms.text');
     }
 }
