@@ -71,7 +71,7 @@ class BootstrapServiceProvider extends ServiceProvider
 
         'toast'                     => \CeddyG\Bootstrap\View\Components\Toast::class,
         'toast.body'                => \CeddyG\Bootstrap\View\Components\Toast\Body::class,
-        'toast.footer'              => \CeddyG\Bootstrap\View\Components\Toast\Container::class,
+        'toast.container'           => \CeddyG\Bootstrap\View\Components\Toast\Container::class,
         'toast.header'              => \CeddyG\Bootstrap\View\Components\Toast\Header::class,
 
         'alert'                     => \CeddyG\Bootstrap\View\Components\Alert::class,
