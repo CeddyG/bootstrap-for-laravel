@@ -26,10 +26,10 @@ class BootstrapServiceProvider extends ServiceProvider
         'carousel'                  => \CeddyG\Bootstrap\View\Components\Carousel::class,
         'carousel.item'             => \CeddyG\Bootstrap\View\Components\Carousel\Item::class,
 
-        'droopdown'                 => \CeddyG\Bootstrap\View\Components\Dropdown::class,
-        'droopdown.divider'         => \CeddyG\Bootstrap\View\Components\Dropdown\Divider::class,
-        'droopdown.item'            => \CeddyG\Bootstrap\View\Components\Dropdown\Item::class,
-        'droopdown.menu'            => \CeddyG\Bootstrap\View\Components\Dropdown\Menu::class,
+        'dropdown'                  => \CeddyG\Bootstrap\View\Components\Dropdown::class,
+        'dropdown.divider'          => \CeddyG\Bootstrap\View\Components\Dropdown\Divider::class,
+        'dropdown.item'             => \CeddyG\Bootstrap\View\Components\Dropdown\Item::class,
+        'dropdown.menu'             => \CeddyG\Bootstrap\View\Components\Dropdown\Menu::class,
 
         'form'                      => \CeddyG\Bootstrap\View\Components\Form::class,
         'forms.checkbox'            => \CeddyG\Bootstrap\View\Components\Forms\Checkbox::class,
