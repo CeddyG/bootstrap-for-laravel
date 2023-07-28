@@ -1,11 +1,10 @@
-@props(['color' => 'info', 'outline' => false, 'size' => null])
-
-@php
-    $btnClass = 'dropdown-toggle btn btn-'.($outline ? 'outline-' : '').$color.(is_null($size) ? '' : ' btn-'.$size);
-@endphp
-
 <div {{ $attributes->merge(['class' => 'dropdown']) }}>
-    <button {{ $heading->attributes->merge(['class' => $btnClass]) }} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <button {{ $heading->attributes->class([
+        'dropdown-toggle btn', 
+        'btn-outline-'.$color => $outline, 
+        'btn-'.$color => !$outline, 
+        'btn-'.$size => !is_null($size)]) 
+    }} type="button" data-bs-toggle="dropdown" aria-expanded="false">
         {{ $heading }}
     </button>
     <x-bs::dropdown.menu>

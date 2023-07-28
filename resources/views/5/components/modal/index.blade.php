@@ -1,9 +1,11 @@
 @isset($button)
-    @php
-        $btnClass = 'btn btn-'.($button->attributes['outline'] ? 'outline-' : '').($button->attributes['color'] ?: 'info').($button->attributes['size'] ? ' btn-'.$button->attributes['size'] : '');
-    @endphp
-
-    <button {{ $button->attributes->merge(['class' => $btnClass])->filter(fn ($value, $key) => $key != 'outline' && $key != 'color' && $key != 'size') }} type="button" data-bs-toggle="modal" data-bs-target="#{{ $attributes->get('id') }}">
+    <button {{ $button->attributes->class([
+            'btn', 
+            'btn-outline-'.$button->attributes['color'] => $button->attributes['outline'],
+            'btn-'.$button->attributes['color']         => !$button->attributes['outline'],
+            'btn-'.$button->attributes['size']          => $button->attributes['size']
+        ])
+        ->filter(fn ($value, $key) => $key != 'outline' && $key != 'color' && $key != 'size') }} type="button" data-bs-toggle="modal" data-bs-target="#{{ $attributes->get('id') }}">
         {{ $button }}
     </button>
 @endisset

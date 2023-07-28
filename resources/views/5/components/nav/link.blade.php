@@ -1,5 +1,4 @@
 @aware(['dropdown' => false])
-@props(['disabled' => false, 'active' => false])
 
 <a 
     {{ $attributes->class(['nav-link', 'active' => $active, 'dropdown-toggle' => $dropdown, 'disabled' => $disabled]) }} 

@@ -1,10 +1,8 @@
-@props(['color' => 'info', 'type'=>'border', 'size' => null]) 
-
-@php
-    $spinnerClass = 'spinner-'.$type.($size ? ' spinner-'.$type. '-'.$size : '').' text-'.$color
-@endphp
-
-<div {{ $attributes->merge(['class' => $spinnerClass]) }} role="status">
+<div {{ $attributes->class([
+        'spinner-'.$type,
+        'spinner-'.$type.'-'.$size => !is_null($size),
+        'text-'.$color
+    ]) }} role="status">
     <span class="visually-hidden">Loading...</span>
 </div>
 
