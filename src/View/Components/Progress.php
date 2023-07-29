@@ -72,6 +72,6 @@ class Progress extends Component
      */
     public function render()
     {
-        return view('bs::components.progress');
+        return view('bs::components.progress.index');
     }
 }

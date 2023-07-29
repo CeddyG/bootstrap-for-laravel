@@ -54,7 +54,7 @@ class Modal extends Component
                 $data['attributes']['data-bs-keyboard'] = 'false';
             }
             
-            return 'components.modal.index';
+            return 'bs::components.modal.index';
         };
     }
 }
