@@ -3,6 +3,7 @@ namespace CeddyG\Bootstrap;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use CeddyG\Bootstrap\Models\ModelBinding;
 
 /**
  * Description of ServiceProvider
@@ -124,5 +125,9 @@ class BootstrapServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/bootstrap.php', 'bootstrap'
         );
+        
+        $this->app->singleton(ModelBinding::class, function ($app) {
+            return new ModelBinding();
+        });
     }
 }
