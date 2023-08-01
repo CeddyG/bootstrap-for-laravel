@@ -51,7 +51,7 @@ class Form extends Component
         return function (array &$data) {
             $data['attributes']['method'] = $this->method;
             
-            return 'components.form';
+            return 'bs::components.form';
         };
     }
 }
