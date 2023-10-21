@@ -39,6 +39,7 @@ class BootstrapServiceProvider extends ServiceProvider
         'forms.email'               => \CeddyG\Bootstrap\View\Components\Forms\Email::class,
         'forms.input-group-text'    => \CeddyG\Bootstrap\View\Components\Forms\InputGroupText::class,
         'forms.label'               => \CeddyG\Bootstrap\View\Components\Forms\Label::class,
+        'forms.password'            => \CeddyG\Bootstrap\View\Components\Forms\Password::class,
         'forms.radio'               => \CeddyG\Bootstrap\View\Components\Forms\Radio::class,
         'forms.range'               => \CeddyG\Bootstrap\View\Components\Forms\Range::class,
         'forms.select'              => \CeddyG\Bootstrap\View\Components\Forms\Select::class,
