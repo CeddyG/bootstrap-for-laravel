@@ -19,9 +19,9 @@ class Select extends Input
      *
      * @return void
      */
-    public function __construct(Factory $view, ModelBinding $modelBinding, $name, $options, $label = null)
+    public function __construct(Factory $view, ModelBinding $modelBinding, $name, $options, $label = null, $value = null)
     {
-        parent::__construct($view, $modelBinding, $name, $label);
+        parent::__construct($view, $modelBinding, $name, $label, $value);
         
         $this->options = $options;
     }
@@ -34,7 +34,7 @@ class Select extends Input
      */
     public function isSelected($option)
     {
-       return $option === $this->value;
+        return in_array($option, (array) $this->value);
     }
     
     /**
