@@ -46,6 +46,7 @@ class BootstrapServiceProvider extends ServiceProvider
         'forms.submit'              => \CeddyG\Bootstrap\View\Components\Forms\Submit::class,
         'forms.switch-toggle'       => \CeddyG\Bootstrap\View\Components\Forms\SwitchToggle::class,
         'forms.text'                => \CeddyG\Bootstrap\View\Components\Forms\Text::class,
+        'forms.textarea'            => \CeddyG\Bootstrap\View\Components\Forms\Textarea::class,
 
         'layout.col'                => \CeddyG\Bootstrap\View\Components\Layout\Col::class,
         'layout.container'          => \CeddyG\Bootstrap\View\Components\Layout\Container::class,
