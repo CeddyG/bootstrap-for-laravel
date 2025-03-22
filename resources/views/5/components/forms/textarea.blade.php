@@ -8,9 +8,7 @@
     {{ $attributes->class(['form-control', 'is-invalid' => $errors->has($name)]) }} 
     id="{{ $name }}" 
     name="{{ $name }}"
-    {{ $floatingLabel && !$attributes->has('placeholder') ? 'placeholder='.$label : '' }}>
-    {{ $value }}
-</textarea>
+    {{ $floatingLabel && !$attributes->has('placeholder') ? 'placeholder='.$label : '' }}>{{ $value }}</textarea>
 
 @if($floatingLabel)
         <x-bs::forms.label :name="$name" :label="$label" />
